@@ -1,0 +1,59 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#map {
+    height: 100%;
+}
+
+#info-box {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    background: white;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    z-index: 1000;
+    width: 220px;
+}
+
+#info-box input {
+    width: 95%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#info-box button {
+    width: 100%;
+    padding: 8px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    #info-box {
+        top: 10px;
+        left: 10px;
+        width: 85%;
+        max-height: 45%;
+        overflow-y: auto;
+        font-size: 14px;
+    }
+
+    #map {
+        height: 100%;
+    }
+
+    #info-box input {
+        font-size: 16px;
+    }
+
+    #info-box button {
+        font-size: 16px;
+    }
+}
